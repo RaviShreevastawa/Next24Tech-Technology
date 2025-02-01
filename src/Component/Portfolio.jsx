@@ -2,9 +2,9 @@ import React from 'react'
 import python from "../assets/python logo.jpg";
 import mongoDB from "../assets/Mongo logo.png";
 import react from "../assets/react-logo-1.png";
-import node from "../assets/Node.js logo.png";
+import node from "../assets/node.png";
 import java from "../assets/java logo.png";
-import express from "../assets/Express icon.png";
+import express from "../assets/expres.png";
 
 export default function Portfolio() {
   const cardItem=[
@@ -25,7 +25,7 @@ export default function Portfolio() {
     },
     {
       id:4,
-      logo:node.js,
+      logo:node,
       name:"Node.Js"
     },
     {
@@ -42,7 +42,7 @@ export default function Portfolio() {
   return (
     <div 
       name="Portfolio" 
-      className=' max-w-screen-2xl container mx-auto px-4 md:px-20 my-16'>
+      className=' max-w-screen-2xl text-white container mx-auto px-4 md:px-20 my-16'>
       <div>
         <h1 className='text-3xl font-bold mb-5'>PortFolio</h1>
         <span className='underline font-semibold'>Feature Projects</span>
@@ -53,7 +53,7 @@ export default function Portfolio() {
                 <img src={logo} className=' w-[120px] h-[120px] p-1 rounded-full border-[2px]' alt="" />
                 <div>
                   <div className=' px-2 font-bold text-xl mb-2'>{name}</div>
-                  <p className='px-2 text-gray-700'>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                  <p className='px-2 text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
                 </div>
                 <div className='justify-around px-6 py-4 space-x-3'>
                   <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded'>Video</button>

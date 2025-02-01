@@ -11,7 +11,7 @@ import { FaNodeJs } from "react-icons/fa";
 
 import { ReactTyped,Typed } from "react-typed";
 
-import pic from "../assets/Collage img.jpg";
+import pic from "../assets/Profile.png";
 
 
 
@@ -25,11 +25,11 @@ export default function Home() {
         <>
             <div 
                 name="Home" 
-                className=' max-w-screen-2xl container mx-auto px-4 md:px-20 my-20 shadow-md'>
+                className=' max-w-screen-2xl container mx-auto px-4 md:px-20 my-20 shadow-md text-white'>
                 <div className=' flex flex-col md:flex-row'> 
                     <div className=' md:w-1/2 mt-12 md:mt-24 space-y-2 order-2 md:order-1'>
-                        <span className='text-xl'>Welcome In My Feed</span>
-                        <div className='flex space-x-1 text-2xl md:text-4xl'>
+                        <span className='text-xl text-white'>Welcome In My Feed</span>
+                        <div className='flex space-x-1 text-2xl md:text-4xl text-white'>
                             <h1>Hello, I'm a </h1>
                             {/*<span className=' text-red-700 font-bold'>Developer</span>*/}
                             <ReactTyped
@@ -76,7 +76,7 @@ export default function Home() {
                                 </ul>
                             </div>
                             <div>
-                            <h1 className='font-bold'>Currently Working On</h1>
+                            <h1 className='font-bold text-yellow-500'>Currently Working On</h1>
                                 <ul className='flex space-x-5'>
                                  <SiMongodb className='text-xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px]' />
                                  <SiReact className='text-xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px]' />
@@ -87,7 +87,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className='md:w-1/2 md:ml-48 md:mt-20 mt-8 order-1'> 
-                        <img src={pic} className='rounded-full md:w-[350px] md:h-[350px] ' alt="" />
+                        <img src={pic} className='rounded-full md:w-[350px] md:h-[350px]' alt="" />
                     </div>
                 </div>
             </div>

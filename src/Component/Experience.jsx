@@ -1,5 +1,5 @@
 import React from 'react'
-import html from "../assets/html-logo.png";
+import html from "../assets/htm.png";
 import javascript from "../assets/javascript.jpg";
 import oracle from "../assets/oracle-logo.jpg";
 import java from "../assets/java logo.png";
@@ -48,14 +48,14 @@ export default function Experience() {
   return (
     <div 
       name="Experience" 
-      className=' max-w-screen-2xl container mx-auto px-4 md:px-20 my-16'>
+      className=' max-w-screen-2xl container mx-auto px-4 md:px-20 my-16 text-white'>
       <div>
         <h1 className='text-3xl font-bold mb-5'>Experience</h1>
         <span className='font-semibold'>I have more than of one year of Experience in web Technologies</span>
         <div className='grid grid-cols-2 md:grid-cols-5 gap-7 my-3'>
            {
             cardItem.map(({id,logo,name}) => (
-              <div className=' flex flex-col items-center justify-center border-[2px] rounded-full md:w-[200px] md:h-[200px] cursor-pointer hover:scale-110 duration-300' 
+              <div className=' flex flex-col items-center justify-center md:w-[200px] md:h-[200px] cursor-pointer hover:scale-110 duration-300' 
               key={id}>
                 <img 
                     src={logo} 

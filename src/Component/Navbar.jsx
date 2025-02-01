@@ -31,9 +31,9 @@ function Navbar() {
   ]
   return (
      <div>
-        <div className='max-w-screen-2xl container mx-auto px-4 md:px-20 shadow-md flex justify-between items-center h-16'>
+        <div className='max-w-screen-2xl container mx-auto px-4 md:px-20 shadow-md shadow-white flex justify-between items-center h-16 text-white'>
           <div className='flex space-x-2 items-center'>
-            <img src={pic} className='h-12 w-12 rounded-full' alt=""/>
+            <img src={pic} className='h-12 w-12 rounded-full shadow-md shadow-orange-700' alt=""/>
               <div>
                 <h1 className='font-semibold text-xl cursor-pointer'>
                   Rav<span className='text-green-500'>i</span>
@@ -67,7 +67,7 @@ function Navbar() {
          {
           menu &&(
             <div>
-              <ul className=' md:hidden flex flex-col items-center justify-center h-screen'>
+              <ul className=' md:hidden flex flex-col items-center justify-center h-screen text-white'>
               {navItems.map(({ id, text }) => (
                 <li 
                   className=' hover:scale-105 font-semibold  duration-200 cursor-pointer' 

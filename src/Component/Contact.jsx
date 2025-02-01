@@ -28,7 +28,7 @@ export default function Contact() {
         <hr/>
         <div 
             name="Contact"
-            className='max-w-screen-2xl container mx-auto px-4 md:px-20 my-20'>
+            className='max-w-screen-2xl text-white container mx-auto px-4 md:px-20 my-20'>
             <h1 className='text-3xl font-bold mb-4'>Contact Me</h1>
             <span>Please fill out the form below to contact me</span>
             <div className='flex flex-col items-center justify-center mt-5'>
@@ -37,9 +37,9 @@ export default function Contact() {
                     //action="https://getform.io/f/pbygmzlb"
                     //method='POST' 
                     className='bg-slate-200 w-96 px-8 py-6 rounded-xl'>
-                    <h1 className='text-xl font-semibold mb-4'>Send Your Message</h1>
+                    <h1 className='text-xl font-semibold mb-4 text-black'>Send Your Message</h1>
                     <div className='flex flex-col mb-4'>
-                        <label className='block text-gray-700'>FullName</label>
+                        <label className='block text-black'>FullName</label>
                         <input 
                             {...register("name", { required: true })}
                             className='shadow appearance-none border rounded-lg py-2 px-3 text-gray-700 leading-tight font-bold'
@@ -51,7 +51,7 @@ export default function Contact() {
                         {errors.name && <span>This field is required</span>}
                     </div>
                     <div name="Contact" className='flex flex-col mb-4'>
-                        <label className='block text-gray-700'>Email</label>
+                        <label className='block text-black'>Email</label>
                         <input 
                             {...register("email", { required: true })}
                             className='shadow appearance-none border rounded-lg py-2 px-3 text-gray-700 leading-tight font-bold'
@@ -63,7 +63,7 @@ export default function Contact() {
                         {errors.email && <span>This field is required</span>}
                     </div>
                     <div className='flex flex-col mb-4'>
-                        <label className='block text-gray-700'>Message</label>
+                        <label className='block text-black'>Message</label>
                         <textarea 
                             {...register("message", { required: true })}
                             className='shadow appearance-none border rounded-lg py-2 px-3 text-gray-700 leading-tight font-bold'
